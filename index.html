@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Whiskey + Vinyl Music Player</title>
+</head>
+<body>
+
+<div class="text">
+    <h1>Whiskey + Vinyl Playlist</h1>
+    <p>Welcome to the Whiskey + Vinyl playlist. This mix includes Japanese 80s citypop. Enjoy!</p>
+    <a class="spotify-btn" href="https://open.spotify.com/playlist/47jJTxXs35MNdsAwCn6fxW?si=fc5d9c715dbf4093">Spotify playlist</a>
+</div>
+
+
+
+    <div class="container">
+        <div class="song-info">
+            <div class="artist-name"></div>
+            <div class="song-name"></div>
+            <div class="progress-bar">
+                <div class="fill-bar"></div>
+            </div>
+            <div class="time">0:00 - 0:00</div>
+        </div>
+        <div class="disk">
+            <div class="circle"></div>
+            <div id="cover" class="cover"></div>
+        </div>
+        <div class="controls">
+            <i id="prev" class="fa-solid fa-backward"></i>
+            <i id="play" class="play-btn fa-solid fa-play"></i>
+            <i id="next" class="fa-solid fa-forward"></i>
+        </div>
+        <div class="volumeSlider">
+            <div class="volume-level-block">
+              <div class="flex">
+                <div class="volumn-controls">
+                    <i id="volumn-down" class="fa-solid fa-volume-low"></i>
+                    <i id="volumn-up" class="fa-solid fa-volume-high"></i>
+                </div>
+                 <div class="volume-fill-bar"></div>
+              </div>
+              <div class="value">100%</div>
+            </div>
+          </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
