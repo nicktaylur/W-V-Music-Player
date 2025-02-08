@@ -1,39 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html, body {
+    height:100%;
+}
+
 body{
-    max-width: 1200px;
     background-color: rgb(249, 249, 249);
-    margin: 80px auto;
+    margin: 0px;
     font-family: "Bebas Neue", sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    height: 100vh;
+    background-image: url(https://res.cloudinary.com/jerrick/image/upload/v1644267590/62018846e91766001efc19cc.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 30px black;
+}
+
+.header {
+    padding: 100px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 5px;
 }
 
 p {
-    text-align: center;
+    margin-top: 5px;
+    font-family: "roboto", sans-serif;
+    font-size: 24px;
 }
-
-a {
-    color: #fff;
+   
+.btn-link {
+    color: white;
+    background: #11da22;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px 30px;
     text-decoration: none;
-    text-align: center;
-    display: flex;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 10px;
-}
+    font-weight: bold;
+} 
 
-.text {
-    position: absolute;
-    justify-content: center;
-    top: 150px;
+.btn-link:hover {
+    background: #0c8a16;
 }
 
 .spotify-btn {
@@ -51,28 +63,17 @@ a {
     left: 50%; 
     transform: translateX(-50%);
     width: 450px;
+    height: 10px;
     border-radius: 20px;
-    color: #000000;
-}
-
-.volume-bar{
-    background-color: rgb(63, 63, 62);
-    border-radius: 20px;
-    height: 20px;
-    cursor: pointer;
+    color: #ffffff;
 }
 
 .volume-fill-bar{
-    background: #a4e0a9;
+    background: #ffffff;
     border-radius: 20px;
-    height: 2px;
-}
-
-.volumn-down{
-    margin-left: 200px;
-}
-.volumn-up{
-    margin-left: 500px;
+    padding: 5px;
+    margin-top: -40px;
+    cursor: pointer;
 }
 
 .container{
